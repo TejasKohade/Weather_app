@@ -1,0 +1,74 @@
+name: helloworld
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  velocity_x: ^4.1.0
+  geolocator: ^9.0.2
+  get: ^4.6.5
+  intl: ^0.18.1
+  http: ^1.0.0
+  flutter_launcher_icons: ^0.13.1
+#
+#flutter_icons:
+#  android: true
+#  ios: true
+#  image_path: "assets/icons/clouds.png"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/clouds.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icons/clouds.png"
+  windows:
+    generate: true
+    image_path: "assets/icons/clouds.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/clouds.png"
+
+
+
+
+
+flutter:
+  uses-material-design: true
+  assets:
+     - assets/
+     - assets/icons/
+     - assets/weather/
+  fonts:
+     - family: Poppins
+       fonts:
+         - asset: assets/fonts/Poppins-Regular.ttf
+     - family: Poppins_Light
+       fonts:
+         - asset: assets/fonts/Poppins-Light.ttf
+     - family: Poppins_Bold
+       fonts:
+         - asset: assets/fonts/Poppins-Bold.ttf
+
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
